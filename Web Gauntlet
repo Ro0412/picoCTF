@@ -1,0 +1,25 @@
+Opened both the links
+Round 1
+Entered admin as username and password but it showed invalid
+SELECT * FROM users WHERE username='admin' AND password='admin'was displayed
+So I tried to terminate after username by doing putting username as admin';-- so the rest becomes a comment
+
+Round 2
+On the filters page ,now it said or and like= --
+So I removed -- from the previous username
+
+Round 3
+ or and = like > < --
+ These were the filters for round 3
+ But I did not use any of this in my last username so I used the same admin';
+ 
+ Round 4
+  or and = like > < -- admin
+  These were the filters for round 4
+  So now i cannot use admin word
+  So I used adm'||'in'
+  
+Round 5
+union statement was filtered but I did not use it(read more about union)
+Used same username as last
+
