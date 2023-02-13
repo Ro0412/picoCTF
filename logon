@@ -1,0 +1,9 @@
+First opened the site through the link
+Tried logging in as Joe but it said the password was needed for Joe
+Entered admin as username and admin as password
+It said log in succesful but no flag found
+looked at the source code of page but did not find anything useful
+Inspected the page and looked at accessibility and storage
+In storage i found that admin was False
+Changed it to true and reloaded the oage
+Got the Flag
