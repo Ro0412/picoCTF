@@ -1,0 +1,151 @@
+A ppt got downloaded
+One of the slides had not the flag and rest were empty
+Powerpoint files can be unzipped easily to look through
+
+aarohi@aarohi-HP-Notebook:~$ cd downloads
+bash: cd: downloads: No such file or directory
+aarohi@aarohi-HP-Notebook:~$ ls
+Desktop                     mono_crash.d4716fb0.3.json   Public
+Documents                   mono_crash.eae31791.0.json   snap
+Downloads                   mono_crash.mem.13471.1.blob  Templates
+mono_crash.d4716fb0.0.json  Music                        Videos
+mono_crash.d4716fb0.1.json  Pictures
+mono_crash.d4716fb0.2.json  private.key
+aarohi@aarohi-HP-Notebook:~$ cd Downloads
+aarohi@aarohi-HP-Notebook:~/Downloads$ ls
+ burpsuite_community_linux_v2023_1_2.sh   sample_5184×3456.bmp
+'Forensics is fun.pptm'                   shark1.pcapng
+ HxDSetup.exe                             tunn3l_v1s10n.bmp
+ HxDSetup.zip
+aarohi@aarohi-HP-Notebook:~/Downloads$ 7z x Forensics\ is\ fun.pptm
+Command '7z' not found, but can be installed with:
+sudo apt install p7zip-full
+aarohi@aarohi-HP-Notebook:~/Downloads$ sudo apt install p7zip-full
+[sudo] password for aarohi: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  systemd-hwe-hwdb
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  p7zip
+Suggested packages:
+  p7zip-rar
+The following NEW packages will be installed:
+  p7zip p7zip-full
+0 upgraded, 2 newly installed, 0 to remove and 242 not upgraded.
+Need to get 1,549 kB of archives.
+After this operation, 5,847 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 p7zip amd64 16.02+dfsg-8 [363 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 p7zip-full amd64 16.02+dfsg-8 [1,186 kB]
+Fetched 1,549 kB in 3s (477 kB/s)     
+Selecting previously unselected package p7zip.
+(Reading database ... 197802 files and directories currently installed.)
+Preparing to unpack .../p7zip_16.02+dfsg-8_amd64.deb ...
+Unpacking p7zip (16.02+dfsg-8) ...
+Selecting previously unselected package p7zip-full.
+Preparing to unpack .../p7zip-full_16.02+dfsg-8_amd64.deb ...
+Unpacking p7zip-full (16.02+dfsg-8) ...
+Setting up p7zip (16.02+dfsg-8) ...
+Setting up p7zip-full (16.02+dfsg-8) ...
+Processing triggers for man-db (2.10.2-1) ...
+aarohi@aarohi-HP-Notebook:~/Downloads$ 7z x Forensics\ is\ fun.pptm
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_IN,Utf16=on,HugeFiles=on,64 bits,4 CPUs Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz (306D4),ASM,AES-NI)
+
+Scanning the drive for archives:
+1 file, 100093 bytes (98 KiB)
+
+Extracting archive: Forensics is fun.pptm
+--
+Path = Forensics is fun.pptm
+Type = zip
+Physical Size = 100093
+
+Everything is Ok
+
+Files: 153
+Size:       237329
+Compressed: 100093
+aarohi@aarohi-HP-Notebook:~/Downloads$ ls -la
+total 320500
+drwxr-xr-x  5 aarohi aarohi      4096 Feb 19 17:06  .
+drwxr-x--- 16 aarohi aarohi      4096 Feb 19 11:17  ..
+-rw-rw-r--  1 aarohi aarohi 263193748 Feb 13 10:19  burpsuite_community_linux_v2023_1_2.sh
+-rw-rw-r--  1 aarohi aarohi     10660 Jan  1  1980 '[Content_Types].xml'
+drwx------  2 aarohi aarohi      4096 Feb 19 17:06  docProps
+-rw-rw-r--  1 aarohi aarohi    100093 Feb 19 16:56 'Forensics is fun.pptm'
+-rw-rw-r--  1 aarohi aarohi   3369785 Feb 28  2020  HxDSetup.exe
+-rw-rw-r--  1 aarohi aarohi   3271994 Feb 19 09:42  HxDSetup.zip
+-rw-rw-r--  1 aarohi aarohi        86 Feb 19 16:57 '.~lock.Forensics is fun.pptm#'
+drwx------  7 aarohi aarohi      4096 Feb 19 17:06  ppt
+drwx------  2 aarohi aarohi      4096 Feb 19 17:06  _rels
+-rw-rw-r--  1 aarohi aarohi  53747850 Feb 19 10:11  sample_5184×3456.bmp
+-rw-rw-r--  1 aarohi aarohi   1558808 Feb 19 11:10  shark1.pcapng
+-rw-rw-r--  1 aarohi aarohi   2893454 Feb 19 11:01  tunn3l_v1s10n.bmp
+aarohi@aarohi-HP-Notebook:~/Downloads$ strings ppt/vbaProject.bin 
+VBAProje
+stdole>
+*\G{00
+020430-
+6}#2.0#0
+#C:\Wind
+ows\Syst em32\
+tlb#OLE 
+Automati
+EOffDic
+2DF8D04C
+-5BFA-10
+1B-BDE5
+gram Fil
+es\Commo
+Micros
+oft Shar
+ed\OFFIC
+E16\MSO.0DLL#
+M 1@6.0 Ob
+Library
+ule1G
+sorry_but_this_isn't_it
+Attribut
+e VB_Nam
+e = "Mod
+ule1"
+ub not_f
+lag()
+L As
+@sorry_
+this_isn 't_it
+CsXz
+PowerPoint
+Win16
+Win32
+Win64x
+VBA6
+VBA7
+Project1
+stdole
+VBAProject
+Office
+Module1b
+_Evaluate
+not_flag	
+ID="{111D4352-E1AC-46B0-8500-E5E7DFB7004C}"
+Module=Module1
+Name="VBAProject"
+HelpContextID="0"
+VersionCompatible32="393222000"
+CMG="3436F0FDF000F400F400F400F4"
+DPB="3B39FFFA07FB07FB07"
+GC="424086038C048C0473"
+[Host Extender Info]
+&H00000001={3832D640-CF90-11CF-8E43-00A0C911005A};VBE;&H00000000
+[Workspace]
+Module1=26, 26, 668, 718, 
+Module1
+aarohi@aarohi-HP-Notebook:~/Downloads$ cat ppt/slideMasters/hidden 
+Z m x h Z z o g c G l j b 0 N U R n t E M W R f d V 9 r b j B 3 X 3 B w d H N f aarohi@aarohi-HP-Notebook:~/Downloads$ echo ZmxhZzogcGljb0NURntEMWRfdV9rbjB3X3BwdHNfcl96MXA1fQ | base64 -d6MXA1fQ | base64 -d
+flag: picoCTF{D1d_u_kn0w_ppts_r_z1p5}base64: invalid input
