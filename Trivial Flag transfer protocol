@@ -1,0 +1,32 @@
+Downloaded the file and opened it using WireShark
+File > Export Objects > TFTP and Saved all
+5 files were downloaded
+
+First I looked at instructions.txt and it seemed to be an encryption
+I tried rot13 decryption and TFTPDOESNTENCRYPTOURTRAFFICSOWEMUSTDISGUISEOURFLAGTRANSFER.FIGUREOUTAWAYTOHIDETHEFLAGANDIWILLCHECKBACKFORTHEPLAN
+
+So I opened the txt called plan and it too was encrypted
+ USED THE PROGRAM AND HID IT WITH-DUE DILIGENCE. CHECK OUT THE PHOTOS
+ This was the message displayed
+ 
+ I checked out the photos but nothing seemed weird
+ So I used7zip on Program since it said Used the Programme
+ 
+ Learned about Steghide and it is used to hide data
+ 
+ aarohi@aarohi-HP-Notebook:~/Downloads/Trivial$ steghide info picture3.bmp
+"picture3.bmp":
+  format: Windows 3.x bitmap
+  capacity: 59.6 KB
+Try to get information about embedded data ? (y/n) y
+Enter passphrase: 
+  embedded file "flag.txt":
+    size: 40.0 Byte
+    encrypted: rijndael-128, cbc
+    compressed: yes
+
+aarohi@aarohi-HP-Notebook:~/Downloads/Trivial$ steghide extract -sf picture3.bmp
+Enter passphrase: 
+wrote extracted data to "flag.txt".
+
+ 
