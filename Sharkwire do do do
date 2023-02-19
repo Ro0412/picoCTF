@@ -1,0 +1,11 @@
+Downloaded the file but could not open it
+Opened the file with wireshark
+Looked through all the source
+Looked at conversations and we find an IP adress 
+Filtered out everything related to that IP adress using ip.addr
+went to conversations and filtered again
+A particular GET statement is what we needed , GET means an HTTP request is being sent
+Followed that GET
+Found a flag and it looked encrypted in rot13
+Used online rot13 decoder
+
